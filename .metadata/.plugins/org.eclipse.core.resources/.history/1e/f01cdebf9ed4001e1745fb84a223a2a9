@@ -1,0 +1,16 @@
+package examen;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class RockPaperScissorsTest {
+	RockPaperScissors p1= new RockPaperScissors();
+	@Test
+	void test() {
+		String ResultadoEsperado="It's a tie!";
+		String ResultadoObtenido=p1.checkGame("rock", "rock");
+		assertEquals(ResultadoObtenido,ResultadoEsperado);
+	}
+
+}
